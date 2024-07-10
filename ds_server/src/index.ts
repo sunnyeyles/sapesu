@@ -8,10 +8,10 @@ import { seedDatabase } from './helpers/seedDb.js'
 const app: Express = express()
 const port = 3001
 
-setTimeout(() => {
-  connectToDatabase()
-  seedDatabase()
-}, 20000)
+// setTimeout(() => {
+//   connectToDatabase()
+//   seedDatabase()
+// }, 20000)
 
 // app.use(cors(corsOptions))
 app.use(express.json())
