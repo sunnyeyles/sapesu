@@ -8,7 +8,7 @@ export const messagesApi = createApi({
   reducerPath: 'messagesApi',
   tagTypes: ['Messages'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://backend/api/',
+    baseUrl: 'http://localhost:3001/api/',
   }),
   endpoints: (builder) => ({
     getAllMessages: builder.query<MessageType[], void>({
