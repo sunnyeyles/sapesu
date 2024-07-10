@@ -10,7 +10,6 @@ const port = 3001
 
 setTimeout(() => {
   connectToDatabase()
-  seedDatabase()
 }, 5000)
 
 app.use(cors())
