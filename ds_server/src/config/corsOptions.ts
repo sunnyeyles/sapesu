@@ -16,8 +16,16 @@
 // }
 
 // just allow all for now
+// export const corsOptions = {
+//   origin: true,
+//   credentials: true,
+//   optionsSuccessStatus: 200,
+// }
+import cors from 'cors'
+
 export const corsOptions = {
-  origin: true,
-  credentials: true,
-  optionsSuccessStatus: 200,
+  origin: '*', // Allow requests from any origin
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
 }
+

@@ -4,11 +4,14 @@ type MessageType = {
   message: string
   createdAt?: string
 }
+
+const API_URL = 'http://127.0.0.1:3001/api/'
+
 export const messagesApi = createApi({
   reducerPath: 'messagesApi',
   tagTypes: ['Messages'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3001/api/',
+    baseUrl: API_URL,
   }),
   endpoints: (builder) => ({
     getAllMessages: builder.query<MessageType[], void>({
